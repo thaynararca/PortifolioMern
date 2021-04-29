@@ -1,0 +1,32 @@
+{
+    "name": "curso",
+    "version": "1.0.0",
+    "description": "curso basico de nodejs",
+    "main": "index.js",
+    "scripts": {
+        "build": "cd client && npm run build",
+        "install-client": "cd client && npm install",
+        "heroku-postbuild": "npm run install-client && npm run build",
+        "client": "npm start --prefix client",
+        "server": "nodemon server.js",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@material-ui/core": "^4.11.3",
+        "bcrypt": "^5.0.1",
+        "concurrently": "6.0.1",
+        "cookie-parser": "^1.4.5",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "mongoose": "^5.12.3",
+        "nodemon": "^2.0.7",
+        "path": "^0.12.7"
+    },
+    "devDependencies": {
+        "concurrently": "^6.0.1",
+        "nodemon": "^2.0.7"
+    }
+}
