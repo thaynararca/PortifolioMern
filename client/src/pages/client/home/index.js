@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function ProdutosEditar() {
+export default function Home() {
     return ( 
      <div>
           <h1>
-               Atualização de Produtos
+               Página inicial
           </h1>
 
      </div>

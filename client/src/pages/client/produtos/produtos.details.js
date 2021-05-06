@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function ProdutosEditar() {
+export default function ProdutoDetails() {
     return ( 
      <div>
           <h1>
-               Atualização de Produtos
+               Detalhes do produto
           </h1>
 
      </div>

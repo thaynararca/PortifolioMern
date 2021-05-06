@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function ProdutosEditar() {
+export default function UsuariosCadastrar() {
     return ( 
      <div>
           <h1>
-               Atualização de Produtos
+               Cadastro de usuários
           </h1>
 
      </div>
