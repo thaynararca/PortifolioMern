@@ -10,6 +10,8 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
+import CssBaseline from '@material-ui/core/CssBaseline';
+
 
 
 
@@ -21,9 +23,6 @@ const drawerWidth = 240;
 
 
 const useStyles = makeStyles((theme) => ({
-     root: {
-       display: 'flex',
-     },
      toolbar: {
        paddingRight: 24, // keep right padding when drawer closed
      },
@@ -79,27 +78,13 @@ const useStyles = makeStyles((theme) => ({
        },
      },
      appBarSpacer: theme.mixins.toolbar,
-     content: {
-       flexGrow: 1,
-       height: '100vh',
-       overflow: 'auto',
-     },
-     container: {
-       paddingTop: theme.spacing(4),
-       paddingBottom: theme.spacing(4),
-     },
-     paper: {
-       padding: theme.spacing(2),
-       display: 'flex',
-       overflow: 'auto',
-       flexDirection: 'column',
-     },
+
      fixedHeight: {
        height: 240,
      },
    }));
 
-export default function MenuAdmin(){
+export default function MenuAdmin({title}){
 
      const classes = useStyles();
 
@@ -114,6 +99,8 @@ export default function MenuAdmin(){
 
      return(
           <>
+          <CssBaseline />
+
           <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
           <Toolbar className={classes.toolbar}>
                <IconButton
@@ -126,7 +113,7 @@ export default function MenuAdmin(){
                <MenuIcon />
                </IconButton>
                <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-               Dashboard
+                {title}
                </Typography>
 
           </Toolbar>

@@ -6,7 +6,6 @@ export default function UsuariosEditar() {
           <h1>
                Atualização de usuários
           </h1>
-
      </div>
     );
 }
