@@ -58,7 +58,7 @@ export default function UsuariosCadastrar() {
         const response = await api.post('/api/usuarios', data);
 
         if(response.status ===200){
-          window.location.href='/admin/usuarios';
+          window.location.href='/admin/usuarios/cadastrar';
         }else{
           alert('Erro ao cadastrar o usuário!');
         }
